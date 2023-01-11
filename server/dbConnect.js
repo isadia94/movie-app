@@ -4,7 +4,7 @@ const dbConnect = () => {
   const connectionParams = {
     useNewUrlParser: true,
   };
-  mongoose.connect(process.env.MONGO_DB, connectionParams);
+  mongoose.connect(process.env.MONGO_DB_URI, connectionParams);
 
   mongoose.connection.on("connected", () => {
     console.log("Connected to Mongo success....");
