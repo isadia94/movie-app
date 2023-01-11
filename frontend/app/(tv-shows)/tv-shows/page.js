@@ -22,7 +22,7 @@ function TvPage() {
   useEffect(() => {
     const getAllMovies = async () => {
       try {
-        const url = `/movies?page=${page}&sort=${sort.sort},${
+        const url = `api/movies?page=${page}&sort=${sort.sort},${
           sort.order
         }&genre=${filterGenre.toString()}&search=${search}`;
         const { data } = await axios.get(url);
