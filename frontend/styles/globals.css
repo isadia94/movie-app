@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply py-2 px-2 w-[140px] flex items-center outline-none border-none justify-center;
+  }
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: space-between;
+}
