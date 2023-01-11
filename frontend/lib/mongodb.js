@@ -1,8 +1,7 @@
 import { MongoClient } from "mongodb";
 
-let uri =
-  "mongodb+srv://isadia:isadia2022@cluster0.hwrpl9t.mongodb.net/?retryWrites=true&w=majority";
-let dbName = "movieflix";
+let uri = process.env.MONGODB_URI;
+let dbName = process.env.MONGODB_DB;
 
 let cachedClient = null;
 let cachedDb = null;
